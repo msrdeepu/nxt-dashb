@@ -1,6 +1,8 @@
 import Highcharts from "highcharts";
 import HighchartsReact from "highcharts-react-official";
 
+import { Box } from "@mui/material";
+
 const options = {
   title: {
     text: "Electronics Sales",
@@ -23,9 +25,9 @@ const options = {
 
 const BarChart = () => {
   return (
-    <>
+    <Box>
       <HighchartsReact highcharts={Highcharts} options={options} />
-    </>
+    </Box>
   );
 };
 

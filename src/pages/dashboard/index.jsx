@@ -5,6 +5,8 @@ import Grid from "@mui/material/Grid";
 
 //components
 import BarChart from "./BarChart";
+import Deposits from "./Deposits";
+import DataTableChart from "./DataTableChart";
 
 const Dashboard = () => {
   return (
@@ -16,7 +18,12 @@ const Dashboard = () => {
           </Card>
         </Grid>
         <Grid item xs={12} md={4}>
-          <Card>Hello this is card</Card>
+          <Deposits />
+        </Grid>
+        <Grid item xs={12}>
+          <Card>
+            <DataTableChart />
+          </Card>
         </Grid>
       </Grid>
     </>
