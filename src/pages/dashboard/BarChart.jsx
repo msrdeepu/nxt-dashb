@@ -2,6 +2,9 @@ import Highcharts from "highcharts";
 import HighchartsReact from "highcharts-react-official";
 
 const options = {
+  title: {
+    text: "Electronics Sales",
+  },
   series: [
     {
       data: [
