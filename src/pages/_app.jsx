@@ -168,7 +168,6 @@ function SiderItem(itemObj) {
             {itemObj.icon}
           </ListItemIcon>
           <ListItemText
-            className="hidden"
             primary={itemObj.title}
             sx={{ opacity: open ? 1 : 0 }}
           />
@@ -180,7 +179,7 @@ function SiderItem(itemObj) {
 
 export default function MyApp({ Component, pageProps }) {
   const theme = useTheme();
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
 
   const handleDrawerOpen = () => {
     setOpen(true);
@@ -234,8 +233,3 @@ export default function MyApp({ Component, pageProps }) {
     </Box>
   );
 }
-
-{
-  /* <Component {...pageProps} /> */
-}
-// { Component, pageProps }
