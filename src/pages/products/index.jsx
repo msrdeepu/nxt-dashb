@@ -5,7 +5,7 @@ import Productlist from "./Productlist/index";
 const Products = () => {
   return (
     <>
-      <AddProdcuct />
+      {/* <AddProdcuct /> */}
       <Productlist />
     </>
   );

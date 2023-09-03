@@ -29,6 +29,8 @@ import ViewQuiltIcon from "@mui/icons-material/ViewQuilt";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import SecurityIcon from "@mui/icons-material/Security";
 import SpaceDashboardIcon from "@mui/icons-material/SpaceDashboard";
+import EditIcon from "@mui/icons-material/Edit";
+import CircleNotificationsIcon from "@mui/icons-material/CircleNotifications";
 
 // Dashboard, charts, leads, products, forms, text-editor(rich-text-editor),settings,Profile,notifications, Tablelist, userprofile
 
@@ -52,9 +54,21 @@ const DataOne = [
     slug: "products",
     icon: <ProductionQuantityLimitsIcon />,
   },
+  {
+    id: "4",
+    title: "Notifications",
+    slug: "notifications",
+    icon: <CircleNotificationsIcon />,
+  },
 ];
 
 const DataTwo = [
+  {
+    id: "4",
+    title: "Editor",
+    slug: "editor",
+    icon: <EditIcon />,
+  },
   {
     id: "1",
     title: "Leads",
