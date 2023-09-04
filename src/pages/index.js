@@ -5,7 +5,7 @@ import "../app/globals.css";
 const index = () => {
   return (
     <>
-      <div className="h-screen w-screen flex flex-row justify-center items-center">
+      <div className="h-screen w-auto flex flex-row justify-center items-center">
         <Button variant="contained" type="primary">
           <Link
             className="text-white"
