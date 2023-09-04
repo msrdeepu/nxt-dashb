@@ -31,6 +31,7 @@ import SecurityIcon from "@mui/icons-material/Security";
 import SpaceDashboardIcon from "@mui/icons-material/SpaceDashboard";
 import EditIcon from "@mui/icons-material/Edit";
 import CircleNotificationsIcon from "@mui/icons-material/CircleNotifications";
+import TipsAndUpdatesIcon from "@mui/icons-material/TipsAndUpdates";
 
 // Dashboard, charts, leads, products, forms, text-editor(rich-text-editor),settings,Profile,notifications, Tablelist, userprofile
 
@@ -59,6 +60,12 @@ const DataOne = [
     title: "Notifications",
     slug: "notifications",
     icon: <CircleNotificationsIcon />,
+  },
+  {
+    id: "5",
+    title: "Notes",
+    slug: "notes",
+    icon: <TipsAndUpdatesIcon />,
   },
 ];
 

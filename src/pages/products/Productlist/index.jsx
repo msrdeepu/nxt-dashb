@@ -33,15 +33,20 @@ function CardLayoutModel() {
   const [rating, setRating] = useState("");
   const [stock, setStock] = useState("");
 
+  //data
+  const [products, setProducts] = useState("");
+
   async function getProducts() {
     for (let i = 0; i <= 29; i++) {
       // return i;
     }
 
-    let i = 7;
+    let i = 5;
     const res = await fetch("https://dummyjson.com/products");
+    //https://fakestoreapi.com/products
     const data = await res.json();
     console.log(data.products);
+
     setId(data.products[i].id);
     setTitle(data.products[i].title);
     setCategory(data.products[i].category);
@@ -50,6 +55,7 @@ function CardLayoutModel() {
     setPrice(data.products[i].price);
     setRating(data.products[i].rating);
     setStock(data.products[i].stock);
+    // setProducts(data);
   }
 
   useEffect(function () {
@@ -57,34 +63,73 @@ function CardLayoutModel() {
   }, []);
 
   return (
-    <Card sx={{ maxWidth: 345 }}>
-      <CardHeader
-        avatar={
-          <Avatar sx={{ bgcolor: orange[500] }} aria-label="recipe">
-            {id}
-          </Avatar>
-        }
-        title={title}
-        subheader={`Category: ${category}`}
-      />
-      <CardMedia component="img" height="300" image={image} alt={title} />
-      <CardContent>
-        <Typography variant="body2" color="text.secondary">
-          {description}
-        </Typography>
-      </CardContent>
-      <CardActions disableSpacing>
-        <Button startIcon={<AttachMoneyIcon />}>{price}</Button>
-        <Button>Stock:{stock}</Button>
-        <Button startIcon={<StarIcon />}>{rating}</Button>
-        <IconButton aria-label="add to favorites">
-          <FavoriteIcon />
-        </IconButton>
-        <IconButton aria-label="share">
-          <ShareIcon />
-        </IconButton>
-      </CardActions>
-    </Card>
+    <>
+      {/* {data.map((itemObj) => {
+        return (
+          <Card sx={{ maxWidth: 345 }} key={itemObj.id}>
+            <CardHeader
+              avatar={
+                <Avatar sx={{ bgcolor: orange[500] }} aria-label="recipe">
+                  {itemObj.id}
+                </Avatar>
+              }
+              title={itemObj.title}
+              // subheader={itemObj.category}
+            />
+            <CardMedia
+              component="img"
+              height="300"
+              image={itemObj.image}
+              alt={itemObj.title}
+            />
+            <CardContent>
+              <Typography variant="body2" color="text.secondary">
+                {itemObj.description}
+              </Typography>
+            </CardContent>
+            <CardActions disableSpacing>
+              <Button startIcon={<AttachMoneyIcon />}>{itemObj.price}</Button>
+              <Button>Stock:{itemObj.stock}</Button>
+              <Button startIcon={<StarIcon />}>{itemObj.rating}</Button>
+              <IconButton aria-label="add to favorites">
+                <FavoriteIcon />
+              </IconButton>
+              <IconButton aria-label="share">
+                <ShareIcon />
+              </IconButton>
+            </CardActions>
+          </Card>
+        );
+      })} */}
+      <Card sx={{ maxWidth: 345 }}>
+        <CardHeader
+          avatar={
+            <Avatar sx={{ bgcolor: orange[500] }} aria-label="recipe">
+              {id}
+            </Avatar>
+          }
+          title={title}
+          subheader={`Category: ${category}`}
+        />
+        <CardMedia component="img" height="300" image={image} alt={title} />
+        <CardContent>
+          <Typography variant="body2" color="text.secondary">
+            {description}
+          </Typography>
+        </CardContent>
+        <CardActions disableSpacing>
+          <Button startIcon={<AttachMoneyIcon />}>{price}</Button>
+          <Button>Stock:{stock}</Button>
+          <Button startIcon={<StarIcon />}>{rating}</Button>
+          <IconButton aria-label="add to favorites">
+            <FavoriteIcon />
+          </IconButton>
+          <IconButton aria-label="share">
+            <ShareIcon />
+          </IconButton>
+        </CardActions>
+      </Card>
+    </>
   );
 }
 
