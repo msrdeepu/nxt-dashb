@@ -12,16 +12,22 @@
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@fontsource/roboto": "^5.0.8",
+    "@iconscout/react-unicons": "^1.1.6",
     "@mui/icons-material": "^5.14.7",
     "@mui/material": "^5.14.7",
+    "apexcharts": "^3.35.0",
     "chart.js": "^4.4.0",
     "eslint": "8.48.0",
     "eslint-config-next": "13.4.19",
+    "framer-motion": "^6.2.9",
     "highcharts-react-official": "^3.2.0",
     "next": "13.4.19",
     "react": "18.2.0",
+    "react-apexcharts": "^1.4.0",
     "react-chartjs-2": "^5.2.0",
-    "react-dom": "18.2.0"
+    "react-circular-progressbar": "^2.0.4",
+    "react-dom": "18.2.0",
+    "sharp": "^0.32.5"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.15",

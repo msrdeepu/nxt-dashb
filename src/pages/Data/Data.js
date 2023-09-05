@@ -1,6 +1,4 @@
 // Analytics Cards imports
-import { UilUsdSquare, UilMoneyWithdrawal } from "@iconscout/react-unicons";
-import { keyboard } from "@testing-library/user-event/dist/keyboard";
 
 //mui-icons
 import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
