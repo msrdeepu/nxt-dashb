@@ -11,11 +11,9 @@ const Note = (props) => {
     <div className="note">
       <h1 className="note-title">{props.title}</h1>
       <p className="note-matter">{props.content}</p>
-      <Button
-        className="note-button"
-        onChange={handleClick}
-        startIcon={<DeleteIcon />}
-      ></Button>
+      <Button className="note-button" onClick={handleClick}>
+        <DeleteIcon />
+      </Button>
     </div>
   );
 };
