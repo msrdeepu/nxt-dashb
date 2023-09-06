@@ -256,7 +256,7 @@ export default function MyApp({ Component, pageProps }) {
           <Component {...pageProps} />
         </Box>
       </Box>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
