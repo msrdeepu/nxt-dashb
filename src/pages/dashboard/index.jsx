@@ -5,11 +5,16 @@ import Grid from "@mui/material/Grid";
 import BarChart from "./BarChart";
 import Deposits from "./Deposits";
 import DataTableChart from "./DataTableChart";
+import SalesPercent from "./SalesPercent";
 
 const Dashboard = () => {
   return (
     <>
       <Grid container spacing={4}>
+        <Grid item xs={12}>
+          <SalesPercent />
+        </Grid>
+
         <Grid item xs={12} md={8}>
           <Card>
             <BarChart />
