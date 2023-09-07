@@ -1,19 +1,7 @@
 import "./login.css";
 
 //antd
-import {
-  Button,
-  Form,
-  Input,
-  Radio,
-  DatePicker,
-  message,
-  Upload,
-  Modal,
-  Col,
-  Row,
-  Watermark,
-} from "antd";
+import { Button, Form, Input, Col, Row } from "antd";
 //captcha
 import ReCAPTCHA from "react-google-recaptcha";
 function onChange(value) {
