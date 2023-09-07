@@ -1,10 +1,13 @@
 .login-container {
-  height: 60vh;
+  height: auto;
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  background-color: #47dad0;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
   border-radius: 8px;
   box-shadow: rgba(254, 205, 211, 0.1) 0px 4px 16px,
     rgba(254, 205, 211, 0.1) 0px 8px 24px,
@@ -22,6 +25,16 @@
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
   /* background-color: orange; */
+}
+.form-item {
+  background-color: #f8259976;
+  background-image: url("https://www.transparenttextures.com/patterns/gplay.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: rgba(239, 51, 198, 0.715) 0px 4px 16px,
+    rgba(35, 230, 227, 0.854) 0px 8px 24px,
+    rgba(254, 205, 211, 0.1) 0px 16px 56px;
 }
 .login-text-container {
   height: 30%;

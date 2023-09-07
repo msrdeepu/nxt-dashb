@@ -1,22 +1,35 @@
-import "./indexstyle.css";
-import "../../app/globals.css";
-
-//mui
-
-//antd
-import { Progress, Space } from "antd";
+import { Card } from "@mui/material";
+import Grid from "@mui/material/Grid";
 
 //components
+import BarChart from "./BarChart";
+import Deposits from "./Deposits";
+import DataTableChart from "./DataTableChart";
+import SalesPercent from "../charts/SalesPercent";
 
 const Charts = () => {
   return (
-    <div className="grid-container">
-      <div>Charts</div>
-      <Space wrap>
-        {" "}
-        <Progress type="dashboard" percent={75} />
-      </Space>
-    </div>
+    <>
+      <Grid container spacing={4}>
+        <Grid item xs={12}>
+          <SalesPercent />
+        </Grid>
+
+        <Grid item xs={12} md={8}>
+          <Card>
+            <BarChart />
+          </Card>
+        </Grid>
+        <Grid item xs={12} md={4}>
+          <Deposits />
+        </Grid>
+        <Grid item xs={12}>
+          <Card>
+            <DataTableChart />
+          </Card>
+        </Grid>
+      </Grid>
+    </>
   );
 };
 

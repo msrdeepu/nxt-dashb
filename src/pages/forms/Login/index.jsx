@@ -11,13 +11,8 @@ function onChange(value) {
 const index = () => {
   return (
     <div className="login-container">
-      <div className="img-container">
-        <div className="login-text-container">
-          <h1 className="login-here-text">LOGIN HERE</h1>
-        </div>
-      </div>
       <div className="form-container">
-        <Form layout="vertical">
+        <Form className="form-item" layout="vertical">
           <Row gutter={[8, 4]}>
             <Col xs={24}>
               <div className="avatar-container">
@@ -35,7 +30,7 @@ const index = () => {
               </Form.Item>
             </Col>
             <Col xs={24}>
-              <Form.Item label="Password" name={"password"}>
+              <Form.Item label="Password">
                 <ReCAPTCHA
                   theme="dark"
                   style={{ width: "100%" }}
@@ -48,7 +43,7 @@ Secret key: 6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe */}
             </Col>
           </Row>
           <div className="btns-container">
-            <Button type="primary" className="btn-item">
+            <Button type="primary" style={{ margin: "9px" }}>
               Login
             </Button>
             <Button className="btn-item" danger>
