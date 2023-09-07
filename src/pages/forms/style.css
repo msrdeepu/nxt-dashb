@@ -1,13 +1,1 @@
-@media screen and (max-width: 600px) {
-  .register-form-container {
-    display: flex;
-    flex-direction: column;
-  }
-}
 
-@media screen and (min-width: 600px) {
-  .register-form-container {
-    display: flex;
-    flex-direction: row;
-  }
-}

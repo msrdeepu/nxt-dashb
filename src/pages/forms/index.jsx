@@ -1,5 +1,9 @@
 import { useState } from "react";
 
+//components
+import Login from "./Login";
+import Registerform from "./Registerform";
+
 //mui imports
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
@@ -253,7 +257,7 @@ const Forms = () => {
                     htmlType="submit"
                     style={{
                       margin: "8px",
-                      backgroundColor: "orange",
+                      backgroundColor: "#1976D2",
                       color: "white",
                       width: "15%",
                     }}
@@ -308,10 +312,7 @@ const Forms = () => {
               <Typography variant="h5">Login Form</Typography>
             </AccordionSummary>
             <AccordionDetails>
-              <div className="register-form-container-two">
-                <div className="container-one-two">demo1</div>
-                <div className="container-two-two">demo2</div>
-              </div>
+              <Login />
             </AccordionDetails>
           </Accordion>
         </Col>
