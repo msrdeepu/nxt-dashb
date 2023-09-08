@@ -6,11 +6,12 @@ import BarChart from "./BarChart";
 import Deposits from "./Deposits";
 import DataTableChart from "./DataTableChart";
 import SalesPercent from "../charts/SalesPercent";
+import ProjProgress from "./ProjProgres";
 
 const Charts = () => {
   return (
     <>
-      <Grid container spacing={4}>
+      {/* <Grid container spacing={4}>
         <Grid item xs={12}>
           <SalesPercent />
         </Grid>
@@ -28,7 +29,8 @@ const Charts = () => {
             <DataTableChart />
           </Card>
         </Grid>
-      </Grid>
+      </Grid> */}
+      <ProjProgress />
     </>
   );
 };
