@@ -1,36 +1,37 @@
-import { Card } from "@mui/material";
+import { Card, Col, Row } from "antd";
 import Grid from "@mui/material/Grid";
 
 //components
-import BarChart from "./BarChart";
-import Deposits from "./Deposits";
-import DataTableChart from "./DataTableChart";
-import SalesPercent from "../charts/SalesPercent";
 import ProjProgress from "./ProjProgres";
+import ActiveUsers from "./ActiveUsers";
+import Progressreport from "./Pregressreport";
+import BarChartItem from "./BarChartItem";
+import PicChartData from "./PiechartData";
+import TableDataItem from "./TableDataItem";
 
 const Charts = () => {
   return (
     <>
-      {/* <Grid container spacing={4}>
-        <Grid item xs={12}>
-          <SalesPercent />
-        </Grid>
-
-        <Grid item xs={12} md={8}>
-          <Card>
-            <BarChart />
-          </Card>
-        </Grid>
-        <Grid item xs={12} md={4}>
-          <Deposits />
-        </Grid>
-        <Grid item xs={12}>
-          <Card>
-            <DataTableChart />
-          </Card>
-        </Grid>
-      </Grid> */}
-      <ProjProgress />
+      <Row gutter={[8, 4]}>
+        <Col xs={24} md={8}>
+          <ProjProgress />
+        </Col>
+        <Col xs={24} md={8}>
+          <ActiveUsers />
+        </Col>
+        <Col xs={24} md={8}>
+          <Progressreport />
+        </Col>
+        <Col xs={24} md={16}>
+          <BarChartItem />
+        </Col>
+        <Col xs={24} md={8}>
+          <PicChartData />
+        </Col>
+        <Col xs={24}>
+          <TableDataItem />
+        </Col>
+      </Row>
     </>
   );
 };

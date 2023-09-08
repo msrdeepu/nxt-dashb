@@ -58,15 +58,9 @@ function ProgressLayout(itemObj) {
 
 const ProjProgress = () => {
   return (
-    <div>
-      <Row gutter={[8, 4]}>
-        <Col xs={24} md={8}>
-          <Card title="Projects Progress">
-            {ProgressData.map(ProgressLayout)}
-          </Card>
-        </Col>
-      </Row>
-    </div>
+    <Card title="Projects Progress" hoverable>
+      {ProgressData.map(ProgressLayout)}
+    </Card>
   );
 };
 
