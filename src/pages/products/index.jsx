@@ -12,8 +12,8 @@ import animationFive from "../../../public/assets/animfive.json";
 
 const Products = () => {
   return (
-    <>
-      <div className="h-[60vh] flex xs:flex-column md:flex-row items-center justify-center text-orange">
+    <div className="">
+      <div className="h-[auto] flex xs:flex-column md:flex-row items-center justify-center text-orange">
         <div className="space-y-4 w-[60%]">
           <h1 className="text-2xl font-bold">
             Create amazing Applications with React js <br />
@@ -39,7 +39,7 @@ const Products = () => {
         </div>
         <Lottie animationData={animationThree} />
       </div>
-      <div className="h-[60vh] flex xs:flex-column md:flex-row items-center justify-center text-orange">
+      <div className="h-[auto] flex xs:flex-column md:flex-row items-center justify-center text-orange">
         <div className="space-y-4 w-[40%] order-2 text-right">
           <h1 className="text-2xl font-bold">
             Create amazing Applications with React js <br />
@@ -62,7 +62,7 @@ const Products = () => {
         <Lottie animationData={animationTwo} />
       </div>
 
-      <div className="h-[60vh] flex xs:flex-column md:flex-row items-center justify-center text-orange">
+      <div className="h-[auto] flex xs:flex-column md:flex-row items-center justify-center text-orange">
         <div className="space-y-4 w-[90%]">
           <h1 className="text-2xl font-bold">
             Create amazing Applications with React js <br />
@@ -89,7 +89,7 @@ const Products = () => {
         <Lottie animationData={animationFour} />
       </div>
 
-      <div className="h-[60vh] flex xs:flex-column md:flex-row items-center justify-center text-orange">
+      <div className="h-[auto] flex xs:flex-column md:flex-row items-center justify-center text-orange">
         <div className="space-y-4 w-[55%] order-2 text-right">
           <h1 className="text-2xl font-bold">
             Create amazing Applications with React js <br />
@@ -113,7 +113,7 @@ const Products = () => {
         <Lottie animationData={animationFive} />
       </div>
 
-      <div className="h-[60vh] flex xs:flex-column md:flex-row items-center justify-center text-orange">
+      <div className="h-[auto] flex xs:flex-column md:flex-row items-center justify-center text-orange">
         <div className="space-y-4 w-[90%] flex flex-col justify-center text-left">
           <h1 className="text-2xl font-bold">
             Create amazing Applications with React js <br />
@@ -142,7 +142,7 @@ const Products = () => {
         </div>
         <Lottie animationData={animationOne} />
       </div>
-    </>
+    </div>
   );
 };
 
