@@ -28,13 +28,14 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 import MenuIcon from "@mui/icons-material/Menu";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
-import ViewQuiltIcon from "@mui/icons-material/ViewQuilt";
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import SecurityIcon from "@mui/icons-material/Security";
 import SpaceDashboardIcon from "@mui/icons-material/SpaceDashboard";
 import EditIcon from "@mui/icons-material/Edit";
 import CircleNotificationsIcon from "@mui/icons-material/CircleNotifications";
 import TipsAndUpdatesIcon from "@mui/icons-material/TipsAndUpdates";
+import MiscellaneousServicesIcon from "@mui/icons-material/MiscellaneousServices";
 
 // Dashboard, charts, leads, products, forms, text-editor(rich-text-editor),settings,Profile,notifications, Tablelist, userprofile
 
@@ -54,9 +55,9 @@ const DataOne = [
   },
   {
     id: "3",
-    title: "Products",
-    slug: "products",
-    icon: <ProductionQuantityLimitsIcon />,
+    title: "Services",
+    slug: "services",
+    icon: <MiscellaneousServicesIcon />,
   },
   {
     id: "4",
@@ -75,6 +76,12 @@ const DataOne = [
 const DataTwo = [
   {
     id: "4",
+    title: "Products",
+    slug: "products",
+    icon: <ShoppingCartIcon />,
+  },
+  {
+    id: "4",
     title: "Editor",
     slug: "editor",
     icon: <EditIcon />,
@@ -85,6 +92,7 @@ const DataTwo = [
     slug: "leads",
     icon: <PeopleIcon />,
   },
+
   {
     id: "2",
     title: "Forms",
