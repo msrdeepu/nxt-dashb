@@ -6,6 +6,7 @@ import { Col, Row } from "antd";
 //components
 import ClockItem from "./ClockItem";
 import Quote from "./Quote";
+import Animation from "./Animation";
 
 const index = () => {
   return (
@@ -20,6 +21,9 @@ const index = () => {
         </Col>
         <Col xs={24} md={8}>
           <ClockItem />
+        </Col>
+        <Col xs={24}>
+          <Animation />
         </Col>
       </Row>
       <Tasks />

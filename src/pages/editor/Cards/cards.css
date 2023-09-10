@@ -1,0 +1,27 @@
+.box-1 {
+  background-image: url("https://wallpapercave.com/wp/wp4960830.jpg");
+  background-size: cover;
+  height: 100%;
+  border-radius: 6px;
+}
+.box-2 {
+  background-image: url("https://cdn.wallpapersafari.com/2/67/Frc7DA.jpg");
+  background-size: cover;
+  height: 100%;
+  background-position: center;
+  border-radius: 6px;
+}
+.box-3 {
+  background-image: url("https://miro.medium.com/v2/resize:fit:600/1*Zmz1nyh8fRtTTkdYu7qaLw.jpeg");
+  background-size: cover;
+  height: 100%;
+  background-position: center;
+  border-radius: 6px;
+}
+.box-4 {
+  background-image: url("https://i.pinimg.com/originals/31/67/e3/3167e3829e0abe13cb0c0428f1e6402d.jpg");
+  background-size: cover;
+  height: 100%;
+  background-position: center;
+  border-radius: 6px;
+}
