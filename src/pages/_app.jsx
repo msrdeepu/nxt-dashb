@@ -36,6 +36,7 @@ import EditIcon from "@mui/icons-material/Edit";
 import CircleNotificationsIcon from "@mui/icons-material/CircleNotifications";
 import TipsAndUpdatesIcon from "@mui/icons-material/TipsAndUpdates";
 import MiscellaneousServicesIcon from "@mui/icons-material/MiscellaneousServices";
+import ChatIcon from "@mui/icons-material/Chat";
 
 // Dashboard, charts, leads, products, forms, text-editor(rich-text-editor),settings,Profile,notifications, Tablelist, userprofile
 
@@ -75,13 +76,19 @@ const DataOne = [
 
 const DataTwo = [
   {
+    id: "5",
+    title: "Chat",
+    slug: "chat",
+    icon: <ChatIcon />,
+  },
+  {
     id: "4",
     title: "Products",
     slug: "products",
     icon: <ShoppingCartIcon />,
   },
   {
-    id: "4",
+    id: "6",
     title: "Editor",
     slug: "editor",
     icon: <EditIcon />,
