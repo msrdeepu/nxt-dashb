@@ -1,4 +1,7 @@
 import "./chat.css";
+//hooks
+import { useState } from "react";
+
 //antd imports
 import { PlusCircleOutlined } from "@ant-design/icons";
 import { Col, Row, Card, Drawer, Button } from "antd";
@@ -15,13 +18,12 @@ import DirectionsIcon from "@mui/icons-material/Directions";
 import SendIcon from "@mui/icons-material/Send";
 import MmsIcon from "@mui/icons-material/Mms";
 
-let Display = () => {
-  console.log("hello chat btn");
-};
+//api
+//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
 
 const Chat = () => {
   return (
-    <>
+    <div>
       <Row>
         {/* <Col className="left-container" xs={6}>
           <div className="upperSide">
@@ -133,7 +135,7 @@ const Chat = () => {
           </div>
         </Col>
       </Row>
-    </>
+    </div>
   );
 };
 
