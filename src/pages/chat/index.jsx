@@ -2,7 +2,8 @@ import "./chat.css";
 //antd imports
 import { PlusCircleOutlined } from "@ant-design/icons";
 import { Col, Row, Card, Drawer, Button } from "antd";
-
+//images
+import User from "../../../public/imgs/img1.png";
 //mui imports
 import Paper from "@mui/material/Paper";
 import InputBase from "@mui/material/InputBase";
@@ -17,8 +18,6 @@ import MmsIcon from "@mui/icons-material/Mms";
 let Display = () => {
   console.log("hello chat btn");
 };
-//logo
-import Logo from "../../../public/imgs/gptlogo.png";
 
 const Chat = () => {
   return (
@@ -72,6 +71,38 @@ const Chat = () => {
                 </Button>
               </div>
             </div>
+            <Card className="chat-area" hoverable>
+              <Row gutter={[8, 4]}>
+                <Col className="chat-logo-container" xs={5}>
+                  <img
+                    src="https://static.vecteezy.com/system/resources/thumbnails/010/807/094/small_2x/man-employee-profession-free-vector.jpg"
+                    alt=""
+                    className="user-icon"
+                  />
+                </Col>
+                <Col className="chat-text-container" xs={19}>
+                  <h3>What is Democrecy?</h3>
+                </Col>
+              </Row>
+              <Divider className="divider-item" />
+              <Row gutter={[8, 4]}>
+                <Col className="chat-logo-container" xs={5}>
+                  <img
+                    src="https://www.edigitalagency.com.au/wp-content/uploads/chatgpt-logo-white-green-background-png.png"
+                    alt=""
+                    className="user-icon"
+                  />
+                </Col>
+                <Col className="chat-text-container" xs={19}>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Deserunt quia incidunt minima placeat mollitia est soluta
+                    amet nobis voluptatibus cumque perspiciatis nemo, obcaecati
+                    voluptate aliquam recusandae cum totam? Laboriosam, ullam.
+                  </p>
+                </Col>
+              </Row>
+            </Card>
 
             <div>
               <Paper
