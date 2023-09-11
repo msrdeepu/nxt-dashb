@@ -1,7 +1,6 @@
 import React from "react";
 import Cards from "./Cards";
 import { Row, Col, Card } from "antd";
-import EditorItem from "./EditorItem";
 
 const Editor = () => {
   return (
@@ -10,9 +9,7 @@ const Editor = () => {
         {" "}
         <Cards />
       </Col>
-      <Col xs={24}>
-        <EditorItem />
-      </Col>
+      <Col xs={24}></Col>
     </Row>
   );
 };
