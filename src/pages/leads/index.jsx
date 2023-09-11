@@ -1,44 +1,46 @@
-import React from "react";
-import "../../app/globals.css";
-import { Col, Row, Form, Input, Button } from "antd";
-const { TextArea } = Input;
+import React, { useRef } from "react";
+import "./email.css";
+import emailjs from "@emailjs/browser";
+// import emailjs from "@emailjs-com";
 
 const Leads = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_7e3bszd",
+        "template_8hempqo",
+        form.current,
+        "flQTXa2wEQpRPk4RG"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  };
   return (
     <>
-      <h1 className="text-center text-3xl text-orange-500">Send Email</h1>
-      <div className="h-[80vh] w-[100%] flex justify-center items-center">
-        <Form layout="vertical" title="Send Email" className="w-[70%]">
-          <Row gutter={[8, 4]}>
-            <Col xs={24}>
-              <Form.Item label="Email ID" name="mailid">
-                <Input />
-              </Form.Item>
-            </Col>
-            <Col xs={24}>
-              <Form.Item label="Email Address" name="mailaddress">
-                <Input />
-              </Form.Item>
-            </Col>
-            <Col xs={24}>
-              <Form.Item label="Your Message" name="message">
-                <TextArea rows={4} />
-              </Form.Item>
-            </Col>
-            <Col xs={5}>
-              <Form.Item>
-                <Button size="large">Send</Button>
-              </Form.Item>
-            </Col>
-            <Col xs={5}>
-              <Form.Item>
-                <Button size="large" type="primary" danger>
-                  Cancel
-                </Button>
-              </Form.Item>
-            </Col>
-          </Row>
-        </Form>
+      <h1 className="top-header">Send Email</h1>
+      <div className="form-container">
+        <form className="form-item" ref={form} onSubmit={sendEmail}>
+          <label>Name</label>
+          <input type="text" name="user_name" />
+          <label>Email</label>
+          <input type="email" name="user_email" />
+          <label>Message</label>
+          <textarea rows={8} name="message" />
+          <button className="submit-btn" type="submit" value="Send">
+            Send
+          </button>
+        </form>
       </div>
     </>
   );
