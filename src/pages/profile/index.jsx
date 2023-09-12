@@ -1,7 +1,11 @@
-import React from "react";
+import Details from "./Details";
 
 const Profile = () => {
-  return <div>Profile</div>;
+  return (
+    <div>
+      <Details />
+    </div>
+  );
 };
 
 export default Profile;
