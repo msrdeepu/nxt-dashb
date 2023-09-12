@@ -28,15 +28,27 @@ const Leads = () => {
   };
   return (
     <>
-      <h1 className="top-header">Send Email</h1>
+      <h1 className="top-header">Contact US</h1>
       <div className="form-container">
         <form className="form-item" ref={form} onSubmit={sendEmail}>
           <label>Name</label>
-          <input type="text" name="user_name" />
+          <input
+            placeholder="Please Enter Your Name"
+            type="text"
+            name="user_name"
+          />
           <label>Email</label>
-          <input type="email" name="user_email" />
+          <input
+            placeholder="Please Enter Your Email"
+            type="email"
+            name="user_email"
+          />
           <label>Message</label>
-          <textarea rows={8} name="message" />
+          <textarea
+            placeholder="Please Enter Your Message"
+            rows={8}
+            name="message"
+          />
           <button className="submit-btn" type="submit" value="Send">
             Send
           </button>

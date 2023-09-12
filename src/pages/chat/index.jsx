@@ -61,7 +61,7 @@ const Chat = () => {
                   alt="logo"
                   className="logo"
                 />
-                <span className="brand">SandeepGPT</span>
+                <span className="brand">GPT</span>
               </div>
               <div>
                 <Button
